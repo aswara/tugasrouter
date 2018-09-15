@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Form from './komponen/Form';
 import Header from './komponen/Header';
+import Footer from './komponen/Footer';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="container">
         <Header />
         <Form />
+        <Footer />
       </div>
     );
   }
