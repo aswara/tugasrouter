@@ -1,5 +1,339 @@
 body {
   margin: 0;
-  padding: 0;
   font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  background-color: white;
+}
+
+.header {
+  background-color: #7542C1;
+  color: #A2A1DF;
+  font-family: sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+}
+
+.icon {
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 3px 10px 3px 10px;
+  margin: 13px;
+  color: white;
+  float: left;
+}
+
+nav a{
+  color: #A2A1DF;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.teks {
+  margin: 18px;
+  float: left;
+}
+
+.download {
+  border: 1px solid #D4E484;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 3px 10px 3px 10px;
+  margin-top: 13px;
+  margin-right: 10px;
+  color: white;
+  float: right;
+}
+
+.download:hover {
+  background-color: #D4E484;
+  color:black;
+}
+
+
+.menu{
+  margin: 8%;
+  display: flex;
+
+}
+
+.menusatu {
+  width: 50%;
+  padding: 10px;
+}
+
+.judul {
+  font-size: 70px;
+  color: #7952B3;
+}
+
+.isi {
+  font-size: 20px;
+  color: #212529;
+}
+
+.menudua {
+  width: 50%;
+  padding: 10px;
+}
+
+.menudua img{
+  width: 100%;
+}
+
+.get {
+  float: left;
+  font-size: 25px;
+  padding: 15px 10%;
+  border: 1px solid #7542C1;
+  border-radius: 5px;
+  color: #7542C1;
+}
+
+.get:hover {
+  background-color: #7542C1;
+  color: white;
+  
+}
+
+.down {
+  float: right;
+  font-size: 25px;
+  padding: 15px 10%;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #75757D;
+}
+
+.down:hover {
+  background-color: #75757D;
+  color: white;
+}
+
+
+.cur {
+  float: left;
+  color: #6C8AB5;
+
+}
+
+.colom {
+  overflow: hidden; 
+  padding: 0 5%;
+  font-size: 17px;
+  color: #212529;
+}
+
+.col {
+  width: 30%;
+  background-color: #F8F9FA;
+  margin: 5px;
+  float: left;
+  padding: 12px;
+}
+
+.col img{
+  width: 100%;
+}
+
+.read {
+  border: 1px solid #316DFF;
+  padding: 12px;
+  color: #316DFF;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.read:hover {
+  background-color: #316DFF;
+  color: white;
+}
+
+.footer {
+  padding: 5%;
+  font-size: 13px;
+  color: #212529;
+  background-color: #F8F9FA;
+}
+
+.footer a{
+  padding-left: 5px;
+}
+
+
+
+
+.dropbtn {
+  margin: 16px;
+  font-size: 17px;
+}
+
+
+.dropdown {
+  float: right;
+  margin: 18px 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {display:block;}
+
+.bulat {
+  border-radius:100%;
+  
+  border:5px solid #0f7dc8;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+
+
+.list-group li {
+  margin: 5px;
+  margin-left: 20%;
+  padding: 5px;
+  list-style: none;
+  text-align: center;
+  padding-left: 10px; 
+
+}
+
+.list-group li:nth-child(odd) {
+  margin-left: 5%;
+  margin-right: 20%;
+}
+
+.list-group li:hover {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+.baru img {
+  width: 100px;
+  height: 100px;
+  margin: 4%;
+}
+
+.baru img:hover {
+  animation: App-logo-spin infinite 1s linear;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.container-fluid {
+  padding: 40px;
+  color: white;
+  font-size: 100px;
+}
+
+.bg-image {
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  padding: 30px;
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 10.5s steps(30, end) infinite,
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0% }
+  50% { width: 100% }
+  100% { width: 0% }
+}
+
+@keyframes typing2 {
+  0% { width: 100% }
+  50% { width: 0% }
+  100% { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+@keyframes blink-caret2 {
+  from, to { border-color: transparent }
+  50% { border-color: red }
+}
+
+.animation {
+  overflow: hidden; 
+  border-right: .15em solid red; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .10em;
+  animation: 
+    typing 3.5s steps(30, end) infinite,
+    blink-caret2 .5s step-end infinite;
+}
+
+.animation2 {
+  overflow: hidden; 
+  border-right: .15em solid red; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .10em;
+  animation: 
+    typing2 3.5s steps(30, end) infinite,
+    blink-caret2 .5s step-end infinite;
+}
+
+.kotak {
+  padding: 30px;
+  width: 40%;
+  margin: 100px auto;
+  border: 2px solid black;
 }

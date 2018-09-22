@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Form from './komponen/Form';
-import Header from './komponen/Header';
-import Footer from './komponen/Footer';
+import Home from './komponen/Home';
+import About from './komponen/About';
+import Bootstrap from './komponen/Bootsrtap';
+import Nav from './komponen/Nav';
+import Counter from './komponen/Counter'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <Header />
-        <Form />
-        <Footer />
+      <BrowserRouter>
+      <div>
+        <Nav />
+        <div className="mb-5">
+        <Switch>
+          <Route path='/' component={Counter} exact />
+          <Route path='/bootstrap' component={Bootstrap} />
+          <Route path='/about' component={About} />
+        </Switch>
+       </div>
       </div>
+      </BrowserRouter>
     );
   }
 }
